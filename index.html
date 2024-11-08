@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style css/LoginPageStyle.css">
+
+    <style>
+        /* Apply GIF background to the body */
+        body {
+            background: url('images/main bg.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#kim">
+                    <img src="images/kimpo.png" alt="Kimpoy Logo">
+                </a>
+                <a href="#kim2">
+                    <img src="images/Y.png" alt="Kimpoy Logo" style="height: 50px; width: auto;">
+                </a>
+            </div>
+    </nav>
+
+
+
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required placeholder=" ">
+                    <label for="username" class="floating-label">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required placeholder=" ">
+                    <label for="password" class="floating-label">Password</label>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+        
+        <script>
+            document.getElementById("login-form").addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent the form from submitting normally
+                // Here, you can add validation logic if needed
+        
+                // If login is successful, redirect to the main page
+                window.location.href = "mainPage.html";
+            });
+        </script>
+    
+
+
+    </div>
+</body>
+</html>
