@@ -1,0 +1,501 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: rgba(231, 85, 85, 0.7); 
+    font-family: Calibri;
+    padding: 15px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    backdrop-filter: blur(7px); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Navigation Links and Buttons */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.navbar ul li {
+    margin-right: 25px; /* Spacing between nav items */
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative; 
+}
+
+/* Underline Animation for Navigation Links */
+.navbar ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px; 
+    transition: width 0.3s ease; 
+}
+
+.navbar ul li a:hover:after {
+    width: 100%; 
+}
+
+.logo a img {
+    display: inline; 
+}
+
+/* Logo Styles */
+.logo {
+    display: flex; /* Align images horizontally */
+    align-items: center; /* Aligns items vertically centered */
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Keeps the image's aspect ratio */
+}
+
+/* Navigation Div */
+.navdiv {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 100%; /* Ensure nav div spans full width */
+}
+
+/* Navigation Links and Buttons */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 25px;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px; /* Adjust this value for the top offset */
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    margin-top: 20px 0;
+    height: 100vh;
+}
+
+span {
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Adjust color as needed */
+}
+
+
+h1{
+    color: white;
+    padding-bottom: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-left: 40px; 
+    margin-top: 40px;
+}
+p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+}
+
+
+
+
+ /*Home Section*/
+
+ /*Container 1*/
+ #w3-container1 {
+    position: relative;
+    padding-top: 15px; /* Adds padding inside the container from the top */
+    margin-top: 70px;
+    left: 150px;
+    overflow: hidden; /* Prevents overflow of rounded corners */
+    width: 800px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    display: inline-block; /* Ensures the container sizes correctly */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    border-radius: 50px; /* Adjusts the roundness of the corners */
+}
+#w3-container1 p {
+    padding-left: 40px;
+
+}
+#w3-container1:hover {
+    transform: scale(1.10); /* Zooms in the container to 105% size on hover */
+    border: 1px solid #ddd; /* Adds border to each section */
+    background-color: rgba(231, 85, 85, 0.7); /* RGBA with 70% opacity for the background */
+
+}
+
+/* Container 2 */
+#w3-container2 {   
+    padding: 0; /* Remove padding to allow image to fill the container */
+    position: relative;
+    left: 1400px; /* Adjust as necessary */
+    top: -500px; /* Adjust as necessary */
+    overflow: hidden; /* Prevents overflow of rounded corners */
+    width: 350px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    border-radius: 50px; /* Adjusts the roundness of the corners */
+    border: 1px solid transparent; /* Border for the default state */
+}
+
+#w3-container2:hover {
+    transform: scale(1.10); /* Zooms in the container to 110% size on hover */
+    border-color: #ddd; /* Changes border color on hover */
+    background-color: rgba(231, 85, 85, 0.7); /* RGBA with 70% opacity for the background */
+}
+
+.pic1 {
+    width: 100%; /* Make pic1 take full width of the container */
+    height: 100%; /* Make pic1 take full height of the container */
+}
+
+.pic1 img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 50px; /* Match the container's border radius */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Hover Text inside my pic */
+.hover-text {
+    position: absolute; /* Positioning relative to the container */
+    bottom: 20px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    color: white; /* Text color */
+    font-size: 12px; /* Adjust size as needed */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for fading */
+    z-index: 10; /* Ensure it's above other elements */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#w3-container2:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
+
+
+/* About Section */
+        
+#Container-Info p{
+    margin-bottom: 10px;
+    margin-left: -50px;
+    
+}
+#Container-Info strong {
+    margin-right: 10px;
+}
+#Container-Info h1 {
+    margin-bottom: -20px;
+}
+
+        /*image gallery*/
+.Images-container {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    position: relative;
+    left: 520px;
+    top: -600px;
+
+}
+
+.Images-container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+}
+
+.Images-container img:hover {
+    width: 25%;
+}
+
+#Container-Info {
+    position: relative;
+    padding-top: 15px; /* Adds padding inside the container from the top */
+    margin-top: 70px;
+    left: 100px;
+    overflow: hidden; /* Prevents overflow of rounded corners */
+    width: 800px; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    display: inline-block; /* Ensures the container sizes correctly */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    border-radius: 50px; /* Adjusts the roundness of the corners */
+}
+
+#Container-Info:hover {
+    transform: scale(1.10); /* Zooms in the container to 105% size on hover */
+    border: 1px solid #ddd; /* Adds border to each section */
+    background-color: rgba(231, 85, 85, 0.7); /* RGBA with 70% opacity for the background */
+}
+#Container-Info p {
+    padding-left: 100px;
+}
+
+
+
+/* Certificates Section */
+
+#certificates h1{
+    text-align: center;
+}
+
+.certificates-grid {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if the screen is narrow */
+    gap: 20px; /* Optional: add space between items */
+}
+
+.certificate-item {
+    position: relative; /* Allows positioning of the pseudo-element */
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 400px; /* Limit the width of each certificate item */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer on hover */
+    overflow: hidden; /* Ensures blur effect stays within rounded corners */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.certificate-item:hover {
+    transform: scale(1.20); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth shadow */
+}
+
+/* Add background blur on hover using ::before */
+.certificate-item:hover::before {
+    content: ""; /* Required for pseudo-element to show */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(117, 100, 100, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(3px); /* Blurs the background */
+    border-radius: 12px; /* Match parent border radius */
+    z-index: 0; /* Place behind content */
+}
+
+/* Ensure content sits above the blur effect */
+.certificate-item * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Image inside certificate item */
+.certificate-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+/* Gallery Section */
+
+#gallery h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#gallery {
+    padding: 50px 20px;
+    gap: 16px;
+    justify-items: center;
+    background-color: rgba(117, 100, 100, 0.5); /* Semi-transparent to enhance blur effect */
+    backdrop-filter: blur(3px); /* Applies blur to the background */
+    border-radius: 12px;
+    height: 100rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    gap: 20px; /* Spacing between items */
+    justify-items: center; /* Center images in each grid cell */
+    margin-top: 1rem;
+}
+
+/* Gallery Items */
+.gallery-item {
+    width: 100%;
+    height: 500px; /* Set a fixed height for all items */
+    max-width: 280px; /* Set a maximum width for the video */
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin-bottom: 3rem;
+}
+
+/* Gallery Item Video */
+.gallery-item video {
+    width: 100%;
+    height: 100%; /* Make the video fill the container's height */
+    object-fit: cover; /* Ensure the video fills its container without distortion */
+    border-radius: 8px;
+}
+
+/* Gallery Item Image */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill their container without distortion */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Zoom in on the image */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on small screens */
+    }
+
+    .gallery-item {
+        height: 200px; /* Adjust item height on smaller screens */
+    }
+}
+
+
+/* Contact Section*/
+#contact h2 {
+    color: white;
+}
+.contact-form {
+    background: inherit;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    position: relative;
+    top: 130px;
+    left: -220px;
+    z-index: 1; /* Set above background */
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    margin-top: 10rem;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: rgba(235, 66, 66, 0.7);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e64a19;
+}
+
+/* Success message styling */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
